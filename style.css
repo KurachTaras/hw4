@@ -1,153 +1,69 @@
 body {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .wrap {
-    width: 95%;
-    box-sizing: border-box;
-    border: 1px solid grey;
-    border-radius: 20px;
-    margin: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    padding-top: 60px;
 }
 
-.first {
+.container {
     width: 90%;
-    height: 400px;
-    box-sizing: border-box;
-    border: 2px solid black;
-    border-radius: 20px;
-    margin: 100px;
-}
-
-.box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    border: 1px solid black;
-}
-
-.A {
-    width: 100%;
-    height: 150px;
-}
-
-.B-C {
-    width: 100%;
-    display: flex;
-}
-
-.B {
-    width: 75%;
-    height: 245px;
-}
-
-.C {
-    width: 25%;
-    height: 245px;
-}
-
-.second {
-    width: 90%;
-    height: 400px;
-    border: 2px solid black;
-    border-radius: 20px;
-    box-sizing: border-box;
-    margin-bottom: 100px;
-}
-
-.a {
-    width: 100%;
-    height: 133px;
-}
-
-.father {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
+    height: 500px;
 }
 
 .target {
     display: flex;
 }
 
-.b {
-    width: 100%;
-    height: 133px;
-}
-
-.container {
-    width: 100%;
-    height: 133px;
+.father {
+    width: 75%;
     display: flex;
+    flex-wrap: wrap;
 }
 
-.c ,.d ,.e {
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid grey;
+    box-sizing: border-box;
+}
+
+.a {
+    width: 100%;
+    height: 150px;
+}
+
+.b, .c, .d, .e, .f, .g {
     width: 33.3%;
-    height: 133px;
+    height: 175px;
 }
 
-.f {
+.h {
     width: 25%;
-    height: 266px;
 }
 
 
 
 
-
-
-@media screen and (max-width: 1000px){
-    .A {
-        height: 100px;
-    }
-
-    .B {
-        width: 100%;
-        height: 200px;
-    }
-
-    .C {
-        width: 100%;
-        height: 100px;
-    }
-
-    .B-C, .target {
+@media screen  and (max-width: 1000px){
+    .target {
         flex-direction: column;
-    }
-
-    .a {
-        height: 75px;
     }
 
     .father {
         width: 100%;
     }
 
-    .container {
-        display: flex;
-        justify-content: space-between;
-        height: 75px;
+    .a, .b, .c, .d, .e, .f, .g {
+        height: 100px;
     }
 
-    .b {
-        height: 175px;
-    }
-
-    .c, .d, .e {
-        width: 30%;
-        height: 75px;
-    }
-
-    .f {
+    .h {
         width: 100%;
-        height: 75px;
+        height: 200px;
     }
 }
