@@ -9,217 +9,137 @@ body {
     padding-top: 60px;
 }
 
-.package {
-    width: 50%;
-    background: cadetblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .container {
-    width: 70%;
-    margin: 100px;
-    box-sizing: border-box;
+    width: 40%;
     position: relative;
 }
 
-.father {
-    display: flex;
-}
-
-.left {
-    width: 10%;
-}
-
-.right {
-    width: 90%;
-}
-
-.box {
-    border: 2px solid black;
+.grey {
+    background: dimgrey;
+    border: 4px solid white;
     box-sizing: border-box;
+    color: white;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
 }
 
 .head {
-    height: 30px;
-}
-
-.flex {
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.right_head {
-    height: 150px;
-}
-
-.third {
-    height: 70%;
-}
-
-.fourth {
-    height: 30%;
-}
-
-.right_main {
-    height: 225px;
-    display: flex;
-}
-
-.fifth {
-    width: 90%;
-}
-
-.sixth {
-    width: 10%;
-}
-
-.right_footer {
     height: 50px;
 }
 
-span {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
+.logo, .header {
+    background: dimgrey;
+    border: 4px solid white;
+    box-sizing: border-box;
     color: white;
-    background: black;
     display: flex;
+    font-size: 16px;
     justify-content: center;
     align-items: center;
 }
 
-.span_first {
-    position: absolute;
-    top: -10px;
-    left: 52%;
+.logo, .nav  {
+    width: 20%;
 }
 
-.span_second {
-    position: absolute;
-    left: -10px;
-    top: 20%;
+.header, .section {
+    width: 80%;
 }
 
-.span_sixth {
-    position: absolute;
-    right: -10px;
-    top: 50%;
+.main {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.span_fifth {
-    position: absolute;
-    left: 52%;
+.nav {
+    height: 250px;
 }
 
+.store, .tools {
+    height: 50px;
+}
 
+.section {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.intro, .ad {
+    height: 100px;
+}
 
+.intro, .types {
+    width: 80%;
+}
+
+.ad, .products {
+    width: 20%;
+}
+
+.types, .products {
+    height: 250px;
+}
+
+.footer {
+    height: 75px;
+}
+
+.article {
+    width: 20%;
+    height: 100px;
+    position: absolute;
+    bottom: 75px;
+}
 
 
 
 
 @media screen and (max-width: 1000px){
-    .right_main {
-        height: 200px;
+    .main {
         display: flex;
         flex-direction: column;
     }
 
-    .right_head {
-        height: 175px;
-    }
-
-    .third {
-        height: 40%;
-    }
-
-    .fourth {
-        height: 60%;
-    }
-
-    .fifth {
+    .nav {
         width: 100%;
-        height: 60%;
+        height: 50px;
     }
 
-    .sixth {
+    .section {
         width: 100%;
-        height: 40%;
     }
 
-    .container {
+    .intro {
+        width: 70%;
+    }
+
+    .ad {
+        width: 30%;
+    }
+
+    .types {
+        width: 100%;
+    }
+
+    .products {
+        height: 100px;
+        width: 100%;
+    }
+
+    .article {
+        height: 50px;
         width: 100%;
         position: relative;
+        bottom: 0;
+        display: flex;
     }
 
-    .head {
-        width: 80%;
-        position: relative;
-        left: 21%;
+    .store, .tools {
+        height: 50px;
+        width: 50%;
     }
 
-    .left {
-        width: 25%;
-        height: 120px;
-        position: relative;
-        top: -29px;
-    }
-
-    .span_first {
-        left: 45%;
-    }
-
-    .span_second {
-        top: 40%;
-    }
-
-    .span_fifth{
-        left: 55%;
-    }
-
-    .span_sixth {
-        position: relative;
-        left: 45%;
-    }
-}
-
-
-
-
-@media screen and (max-width: 900px){
-    .right_head {
-        height: 150px;
-    }
-
-    .left {
-        height: 90px;
-    }
-
-
-    .third {
-        height: 40%;
-    }
-
-    .fourth {
-        height: 60%;
-    }
-
-    .right_main {
-        height: 235px;
-    }
-
-    .right_footer {
-        height: 40px;
-    }
-
-    .fifth {
-        height: 50%;
-    }
-
-    .sixth {
-        height: 50%;
-    }
 }
